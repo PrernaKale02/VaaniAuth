@@ -1,47 +1,42 @@
-# React + Vite
+# VaaniAuth 🎙️🔐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### AI-Powered Voice Biometric Authentication for Financial Inclusion
 
-Currently, two official plugins are available:
+VaaniAuth is a **voice biometric authentication system** that enables secure, passwordless access to financial services using **voice as the primary identity**. The platform is designed to make banking **more accessible, secure, and inclusive**, especially for users who struggle with traditional authentication methods such as passwords, PINs, or OTPs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚨 Problem Statement
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A large population still lacks access to secure financial services due to:
 
-## Expanding the ESLint configuration
+- Difficulty remembering **passwords or PINs**
+- Limited **digital literacy**
+- Lack of reliable **identity systems**
+- Vulnerability of traditional authentication methods to **fraud and phishing**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Existing voice authentication systems also struggle with:
 
-## VaaniAuth conversion (React + Vite + Tailwind)
+- Background **noise**
+- **Accent and dialect variations**
+- **Replay and spoofing attacks**
 
-I converted the `vaaniauth_banking_app.html` demo into a React component and added Tailwind config files. To finish setup locally:
+---
 
-- Install Tailwind and PostCSS deps:
+## 💡 Our Solution
 
-```bash
-npm install -D tailwindcss postcss autoprefixer
-```
+**VaaniAuth** introduces a secure voice biometric authentication system that allows users to authenticate themselves using **their voice as their identity**.
 
-- (Optional) If you haven't already initialized Tailwind, you can run:
+Instead of typing passwords or entering PINs, users simply **speak a phrase**, and the system verifies their identity using **AI-powered speaker verification and liveness detection**.
 
-```bash
-npx tailwindcss init -p
-```
+---
 
-- Start the dev server:
+## ✨ Key Features
 
-```bash
-npm run dev
-```
-
-Files added/changed:
-
-- `src/components/VaaniAuth.jsx` — React component with UI + logic
-- `src/vaaniauth.css` — original styles from the demo
-- `tailwind.config.cjs`, `postcss.config.cjs` — Tailwind/PostCSS configs
-- `src/index.css` — Tailwind directives added at the top
-
-The app entry is `src/App.jsx` which now renders the `VaaniAuth` component.
+- 🎤 **Voice Registration** – Users register by speaking multiple phrases
+- 🔐 **Voice-Based Authentication** – Login using voice instead of passwords
+- 🌍 **Accent & Dialect Robustness** – Works across diverse speech patterns
+- 🛡 **Liveness Detection** – Prevents replay and recorded audio attacks
+- 📊 **AI Fraud Detection** – Detects abnormal voice patterns or suspicious behavior
+- 🔄 **Continuous Authentication** – Verifies the user throughout the session
+- 📡 **Offline / Edge Capability** – Enables authentication in low connectivity environments
