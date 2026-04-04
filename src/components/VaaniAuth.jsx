@@ -185,10 +185,6 @@ export default function VaaniAuth() {
     }, 2000)
   }
 
-  function simulateFail() {
-    showProcessing('Analyzing Voice...', 'Running biometric match', 2000, () => go('s-fail'))
-  }
-
   function resetPayment() {
     setPayRecording(false)
     const mic = document.getElementById('pay-mic')
@@ -362,7 +358,6 @@ export default function VaaniAuth() {
           </div>
         </div>
         <div className="bottom">
-          <button className="btn btn-ghost" onClick={simulateFail}>Simulate Failure</button>
         </div>
       </div>
 
